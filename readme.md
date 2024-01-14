@@ -20,7 +20,6 @@ Nutritional Information:
 - [ ] Recipes must contain nutritional information based on the TACO table.
 - [ ] Users should be able to choose whether recipes include ingredients beyond their selection.
 - [ ] Users can add pre-made recipes and input the ingredients for nutritional calculations.
-
 Notifications:
 - [ ] Users must be able to receive reminders to take creatine and water via WhatsApp or app notification
 
