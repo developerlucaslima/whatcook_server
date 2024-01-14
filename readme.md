@@ -2,24 +2,48 @@
 
 What Cook
 
-## RFs (Requisitos funcionais)
+## RFs (Requisitos Funcionais)
 
-- [ ] Deve ser possível se cadastrar;
-- [ ] Deve ser possível se autenticar;
-- [ ] Deve ser possível consultar receitas a partir de ingredientes selecionados;
-- [ ] Deve ser possível enviar dicas de receitas;
-- [ ] Deve ser possível filtrar receitas por refeição (café da manhã, almoço, jantar...);
-- [ ] Deve ser possível filtrar receitas por região e culturas;
-- [ ] Deve ser possível obter o perfil de um usuário logado;
+User Authentication and Registration:
+- [ ] Users must be able to register with unique email addresses.
+- [ ] Users should authenticate themselves to access personalized features.
+- [ ] Retrieving the profile of a logged-in user should be possible.
 
-## RNs (Regras de negócio)
+Recipe Discovery:
+- [ ] Users must be able to discover recipes based on ingredients they have at home.
+- [ ] Users should be able to search for recipes by name or type.
+- [ ] It should be possible to filter recipes by meal (breakfast, lunch, dinner).
+- [ ] It should be possible to filter recipes by region and cultures.
 
-- [ ] O usuário não deve poder se cadastrar com um e-mail duplicado;
-- [ ] O cadastro não deve ser obrigatório;
-- [ ] As receitas podem ou não terem ingredientes além dos selecionados, o usuário escolhe;
-- [ ] As receitas devem conter informações nutricionais a partir da tabela TACO;
+Recipe Tips:
+- [ ] Users should be able to send recipe tips.
 
-## RNFs (Requisitos não-funcionais)
+Nutritional Information:
+- [ ] Recipes must contain nutritional information based on the TACO table.
+- [ ] Users should be able to choose whether recipes include ingredients beyond their selection.
 
-- [ ] Todas listas de dados precisam estar paginadas com 20 itens por página;
-- [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
+## RNs (Regras de Negócio)
+
+User Registration Rules:
+- [ ] Users cannot register with duplicate email addresses.
+- [ ] Registration should not be mandatory for browsing recipes.
+
+Recipe Rules:
+- [ ] Recipes may or may not have ingredients beyond the selected ones, based on user preference.
+
+Nutritional Information Rules:
+- [ ] Nutritional information in recipes must adhere to the TACO table.
+
+## RNFs (Requisitos Não-Funcionais)
+
+Security:
+- [ ] User passwords must be securely encrypted.
+
+Data Storage:
+- [ ] Application data must be persisted in a PostgreSQL database.
+
+Pagination:
+- [ ] All data lists (e.g., recipes, ingredients, gyms) must be paginated with a specified number of items per page (e.g., 20 items per page).
+
+User Identification:
+- [ ] Users should be identified and authenticated using JSON Web Tokens (JWT).
